@@ -39,7 +39,7 @@ function repeat() {
 	axios.get('https://api.zcha.in/v2/mainnet/network').then(function(response) {
 		axios.get('https://api.coinmarketcap.com/v1/ticker/zcash/').then(function(res) {
 			current_difficulty = response.data.difficulty;
-			reward = (hashrate / (current_difficulty * 8192)) * 10 * 60 * 30;
+			reward = (hashrate / (current_difficulty * 8192)) * 10 * 2 * 60 * 24;
 			reward_usd = math.round(reward * res.data[0].price_usd, 2);
 			console.log("------------------------- Formula 1 -------------------------");
 			// console.log("Estimated reward in ZEC:" + reward);
