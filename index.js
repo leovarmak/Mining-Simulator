@@ -14,11 +14,6 @@ var block_time;
 var counter1 = 0;
 // USD = 50
 // Sol/s = 25
-output = {price: 5}
-app.get("/", (req, res) => {
-  res.render("index", output);
-  return;
-});
 var listener = app.listen(8000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
@@ -39,7 +34,7 @@ function repeat() {
 	axios.get('https://api.zcha.in/v2/mainnet/network').then(function(response) {
 		axios.get('https://api.coinmarketcap.com/v1/ticker/zcash/').then(function(res) {
 			current_difficulty = response.data.difficulty;
-			reward = (hashrate / (current_difficulty * 8192)) * 10 * 2 * 60 * 24;
+			reward = (hashrate / (current_difficulty * 8192)) * 10 * 30;
 			reward_usd = math.round(reward * res.data[0].price_usd, 2);
 			console.log("------------------------- Formula 1 -------------------------");
 			// console.log("Estimated reward in ZEC:" + reward);
@@ -53,6 +48,11 @@ function repeat() {
 					if (err) throw err;
 					// console.log(result);
 					console.log("Total Mined ZEC:" + result[0]["avg(MinedQty)"]);
+					output = {price: result[0]["avg(MinedQty)"]}
+					app.get("/", (req, res) => {
+					  res.render("index", output);
+					  return;
+					});
 				});
 			});
 		}).catch(function(error) {
