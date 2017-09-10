@@ -507,20 +507,20 @@
 						});
 				});
 				
-				$(function(){
-					var utcoffset = (new Date().getTimezoneOffset()) * 60 * 1000; 
-					$("time").each(function(index){
-						var oldTime = Date.parse($(this).html());
-						if(oldTime>0 && $(this).html().indexOf(" ") >= 0){
-							var newdate = new Date(oldTime - utcoffset);
-							newdate = newdate.getFullYear() + "-" + ("0" + (newdate.getMonth() + 1)).slice(-2) + "-" + ("0" + newdate.getDate()).slice(-2) + " " +  ("0" + newdate.getHours()).slice(-2) + ":" + ("0" + newdate.getMinutes()).slice(-2) + ":" + ("0" + newdate.getSeconds()).slice(-2);
-							$(this).html(newdate);
-						}
-					});
-				});
+				// $(function(){
+				// 	var utcoffset = (new Date().getTimezoneOffset()) * 60 * 1000; 
+				// 	$("time").each(function(index){
+				// 		var oldTime = Date.parse($(this).html());
+				// 		if(oldTime>0 && $(this).html().indexOf(" ") >= 0){
+				// 			var newdate = new Date(oldTime - utcoffset);
+				// 			newdate = newdate.getFullYear() + "-" + ("0" + (newdate.getMonth() + 1)).slice(-2) + "-" + ("0" + newdate.getDate()).slice(-2) + " " +  ("0" + newdate.getHours()).slice(-2) + ":" + ("0" + newdate.getMinutes()).slice(-2) + ":" + ("0" + newdate.getSeconds()).slice(-2);
+				// 			$(this).html(newdate);
+				// 		}
+				// 	});
+				// });
 				</script>
                     <!-- Google Code for Remarketing Tag -->
-                    <style>iframe[name="google_conversion_frame"]{ position:fixed; }</style>
+                    <!-- <style>iframe[name="google_conversion_frame"]{ position:fixed; }</style>
                     <script type="text/javascript">
                         /* <![CDATA[ */
                         var google_conversion_id = 944961577;
@@ -533,11 +533,11 @@
                         &lt;div style="display:none;"&gt;
                         &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/944961577/?guid=ON&amp;amp;script=0"/&gt;
                         &lt;/div&gt;
-                    </noscript>
+                    </noscript> -->
                     <!-- End Google Code for Remarketing Tag -->
                     
                     <!-- Facebook Pixel Code -->
-                    <script>
+                    <!-- <script>
                         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
                         n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
@@ -548,7 +548,7 @@
                     </script>
                     <noscript>
                         &lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=829618193840360&amp;ev=PageView&amp;noscript=1"/&gt;
-                    </noscript>
+                    </noscript> -->
                     <!-- End Facebook Pixel Code -->
                 </body></html>
 
