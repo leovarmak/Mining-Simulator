@@ -1,6 +1,9 @@
 var axios = require('axios');
 var math = require('mathjs');
 var mysql = require('mysql');
+const express = require('express');
+const app = express()
+app.set('view engine', 'pug')
 var reward;
 var reward_usd;
 var hashrate = 1000;
@@ -11,8 +14,16 @@ var block_time;
 var counter1 = 0;
 // USD = 50
 // Sol/s = 25
+output = {price: 5}
+app.get("/", (req, res) => {
+  res.render("index", output);
+  return;
+});
+var listener = app.listen(8000, function () {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
 var con = mysql.createConnection({
-	host: "13.126.87.238",
+	host: "localhost",
 	user: "root",
 	password: "King05101997",
 	database: "mining_data"
