@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://www.nicehash.com/dashboard -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+				<title>Dashboard on NiceHash</title>
+				<link href="./Dashboard on NiceHash_files/style.css" id="css" rel="stylesheet" type="text/css">
+				<link href="./Dashboard on NiceHash_files/style-lang.css" id="css" rel="stylesheet" type="text/css">
+				
+				<!-- <meta name="description" content="">
+				<meta name="keywords" content="">
+				<meta name="robots" content="noindex">
+				<meta property="og:type" content="website">
+				<meta property="og:site_name" content="Mining Simulator">
+				<meta property="og:title" content="Mining Simulator Dashboard">
+				<meta property="og:description" content="">
+				<meta property="og:url" content="https://www.nicehash.com/dashboard">
+				<meta property="og:image" content="https://www.nicehash.com/images/social/og.png">
+				<meta name="twitter:card" content="summary">
+				<meta name="twitter:title" content="Dashboard on NiceHash">
+				<meta name="twitter:description" content="">
+				<meta name="twitter:image" content="https://www.nicehash.com/images/social/tw.png">
+				<meta name="twitter:site" content="@nicehashmining"> -->
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+				
+				    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                   <!--  <script src="./Dashboard on NiceHash_files/829618193840360" async=""></script><script async="" src="./Dashboard on NiceHash_files/fbevents.js"></script><script type="text/javascript" async="" src="./Dashboard on NiceHash_files/analytics.js"></script><script async="" src="./Dashboard on NiceHash_files/js"></script>
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments)};
+                      gtag('js', new Date());
+                    
+                      gtag('config', 'UA-53727004-4');
+                    </script> -->
+				
+				<script type="text/javascript" src="./Dashboard on NiceHash_files/jquery.min.js"></script>
+				<script type="text/javascript" src="./Dashboard on NiceHash_files/jquery-ui.min.js"></script>
+				<script type="text/javascript" src="./Dashboard on NiceHash_files/utils.js"></script>
+				<!-- <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.nicehash.com/images/icons/apple-touch-icon-57x57.png">
+				<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.nicehash.com/images/icons/apple-touch-icon-114x114.png">
+				<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.nicehash.com/images/icons/apple-touch-icon-72x72.png">
+				<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.nicehash.com/images/icons/apple-touch-icon-144x144.png">
+				<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://www.nicehash.com/images/icons/apple-touch-icon-60x60.png">
+				<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.nicehash.com/images/icons/apple-touch-icon-120x120.png">
+				<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.nicehash.com/images/icons/apple-touch-icon-76x76.png">
+				<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.nicehash.com/images/icons/apple-touch-icon-152x152.png">
+				<link rel="icon" type="image/png" href="https://www.nicehash.com/images/icons/favicon-196x196.png" sizes="196x196">
+				<link rel="icon" type="image/png" href="https://www.nicehash.com/images/icons/favicon-96x96.png" sizes="96x96">
+				<link rel="icon" type="image/png" href="https://www.nicehash.com/images/icons/favicon-32x32.png" sizes="32x32">
+				<link rel="icon" type="image/png" href="https://www.nicehash.com/images/icons/favicon-16x16.png" sizes="16x16">
+				<link rel="icon" type="image/png" href="https://www.nicehash.com/images/icons/favicon-128.png" sizes="128x128">
+				<meta name="application-name" content="NiceHash">
+				<meta name="msapplication-TileColor" content="#FFFFFF">
+				<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+				<meta name="msapplication-square70x70logo" content="/images/icons/mstile-70x70.png">
+				<meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png">
+				<meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png">
+				<meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png"> -->
+				
+				</head>
+				<body class="pushmenu-push"><link href="./Dashboard on NiceHash_files/style-dashboard.css" id="css" rel="stylesheet" type="text/css">
+							<header class="loggedin"><div class="frame">
+								<a href="https://www.nicehash.com/" class="logo">NiceHash</a>
+								<div class="menu pushmenu pushmenu-left">
+									<nav class="main">
+										<!-- <a class="logout" href="https://www.nicehash.com/logout" title="Logout">Logout</a>
+										<a href="https://www.nicehash.com/support" title="Support">Support</a>
+										<a href="https://www.nicehash.com/settings" title="Settings">Settings</a>
+										<a href="https://www.nicehash.com/referrals" title="Referrals">Referrals</a>
+										<a href="https://www.nicehash.com/wallet" title="Wallet">Wallet</a> -->
+										<!-- <div id="sellers_button" title="For sellers">For sellers
+											<div class="arrow"></div>
+											<div class="divider"></div>
+											<div id="sellers_dropdown">
+												<a href="https://www.nicehash.com/workers" title="My workers">My workers</a>
+												<a href="https://www.nicehash.com/miner/my" title="My statistics">My statistics</a>
+											</div>
+										</div> -->
+										<!-- <div id="buyers_button" title="For buyers">For buyers<div class="arrow"></div>
+										<div class="divider"></div>
+										<div id="buyers_dropdown">
+											<a href="https://www.nicehash.com/orders" title="My orders">My orders</a>
+											<a href="https://www.nicehash.com/pools" title="My pools">My pools</a>
+											<a href="https://www.nicehash.com/marketplace" title="Marketplace">Marketplace</a>
+										</div></div> -->
+										<a href="index.html" title="Dashboard" class="selected">Dashboard</a>
+									</nav>
+									
+									<nav class="top"><div class="frame">
+										<!-- <a href="https://www.nicehash.com/marketplace" title="Cryptocurrency Marketplace">Live marketplace</a>
+										<a href="https://www.nicehash.com/miner" title="Find my miner">Find miner</a>
+										<a href="https://www.nicehash.com/payments" title="Latest Payments">Latest payments</a> -->
+										<div id="languages">
+											<div id="sel_lang">v0.0.0.1 Aplha</div>
+											<!-- div id="hide_lang">
+										<a href="https://www.nicehash.com/dashboard?lang=en" title="English">English</a><a href="https://www.nicehash.com/dashboard?lang=ru" title="Русский">Русский</a><a href="https://www.nicehash.com/dashboard?lang=zh" title="中文">中文</a>
+											</div> -->
+										</div>
+									</div></nav>
+									<div class="close"></div>
+								</div>
+								<div class="hamburger"></div>		
+							</div></header>		<!-- <script>			
+			var hasLocalStorage = !!function(v,l){try{return (l=localStorage).setItem(v,v)|!l.removeItem(v)}catch(e){}}('_');
+			function updateDashboard(){
+				$.ajax({
+					dataType: "json",
+					url: "https://api.nicehash.com/api?method=stats.provider.ex&addr=39fkkGvNZy2xwjvxUUH7eRGGaqpX9jrqSG&callback=?",
+					timeout: 9000}).done(function (obj){
+						var dataF = '';
+						if(typeof obj.result.error == "undefined"){
+							$.post("/dashboard",{ "data": JSON.stringify(obj['result']['current']) }, function(dataFull) {
+								if(hasLocalStorage){
+									localStorage.setItem('dashboardData-39fkkGvNZy2xwjvxUUH7eRGGaqpX9jrqSG', dataFull);
+								}
+								dataF = dataFull;
+								showData(dataF);
+							});
+						}else if(hasLocalStorage){
+							dataF = localStorage.getItem('dashboardData-39fkkGvNZy2xwjvxUUH7eRGGaqpX9jrqSG');
+							showData(dataF);
+						}
+						
+						function showData(dataF){
+							var obj = jQuery.parseJSON(dataF);
+							if(obj.active>0 && 'new'=='1'){
+								location.reload();
+							}else{
+								var profitability = obj.profitability;
+								var profitabilityFiat = obj.profitabilityFiat;
+								var active = obj.active;
+								var offline = obj.offline;
+								var unpaid = obj.unpaid;
+								$('#workersOnline').html(active + ' <sub>active</sub>');
+								$('#workersOnlineSmall').html(active);
+								$('#workersOffline').html(offline + ' <sub>offline</sub>');
+								$('#workersProfitability').html(profitability + ' <small>BTC/day</small><sub>' + profitabilityFiat + ' USD/day</sub><div class="icon"></div>');
+								$('#workersProfitabilitySmall').html('<b>' + profitability + ' BTC/day</b>');
+								
+								if(parseFloat(unpaid)>0){
+									if($('#unpaidBalance').length === 0){
+										$( ".buttons" ).after('<div class="pending active" id="unpaidBalance"><div class="ico"></div>Unpaid mining balance: ' + unpaid + ' BTC</div>');
+									}else{
+										$('#unpaidBalance').html('<div class="ico"></div>Unpaid mining balance: ' + unpaid + ' BTC</div>');
+									}
+								}
+							}
+						}
+					});
+			}	
+			
+			$(function(){				
+				updateDashboard();
+				var countDown = 60;
+				setInterval(function(){	
+					countDown--;
+					if(countDown<0){
+						updateDashboard();
+						countDown = 60;
+					}
+				}, 1000);
+			});
+		</script> -->
+
+    <style>
+        .vector-order-btn{
+            background: url(../images/web/sprite.svg) no-repeat;
+            background-size: 800px 800px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            cursor:pointer;
+        }
+        .vector-order-btn.details{
+            background-position: -277px -679px;
+        }
+
+        .vector-order-btn.cancel{
+            background-position: -199px -679px;
+        }
+        .orders-btn-cell{
+            width: 110px;
+        }
+        #dashboard .left #contentLargeOrders .box {
+            overflow: visible;
+        }
+        @media (max-width: 760px) {
+            #dashboard .left .box table tr td .shw .button {
+                margin: 20px 10px 0 0;
+            }
+        }
+
+    </style>
+    <!-- <script src="./Dashboard on NiceHash_files/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $('body').tooltip({
+                selector: '[rel=tooltip]'
+            });
+        });
+        function cancelOrder(oid,loc,algo){
+            $('#cancelPopup .button.red').attr('onclick','confirmCancel(' + oid + ',\'' + loc + '\',\'' + algo + '\');');
+            $('#cancelPopup p').html('Are you sure you want to cancel the order <b>#' + oid + '</b>?');
+            $('#popbackground').show();
+            $('#cancelPopup').show();
+        }
+
+        function confirmCancel(oid,loc, algo){
+	        $.ajax({
+		        url: '/siteapi/market/'+algo+'/order/'+loc+'/'+oid,
+		        method: 'DELETE',
+		        contentType: 'application/json',
+		        success: function(res) {
+		        	if(res && res.error) {
+                      $('#cancelPopup div.err').html(res.error);
+                    } else location.reload();
+		        }
+	        });
+        }
+    </script> -->
+    <div id="popbackground"></div>
+    <!-- <div class="marketUp popup" id="cancelPopup">
+        <h2>Cancel order</h2>
+        <div class="closeNow"></div>
+        <p class="cancel-order-text"></p>
+        <div style="text-align: center; color:#e92424" class="err"></div>
+        <div class="button gray" onclick="$(&#39;.popup,#popbackground&#39;).hide();">No, close this window</div>
+        <div class="button red" onclick="">Yes, cancel my order</div>
+    </div> -->
+
+
+	<div id="dashboard"><div class="frame">
+
+		<h1>Mining Simulator</h1>
+		<div class="right">
+			<div id="balance">
+				<h2>Total Mined ZEC till date:</h2>
+				<div class="box">
+					<div class="image"></div>
+					<div class="data">
+						0.00000000 ZEC<sub>0.00 USD</sub>
+					</div>
+					<div class="buttons">
+						<!-- <a href="https://www.nicehash.com/wallet" class="button wallet">Wallet</a> -->
+					</div>
+															<!-- <h3>Your BTC mining and deposit address</h3>
+					<div class="addr">39fkkGvNZy2xwjvxUUH7eRGGaqpX9jrqSG</div> -->
+				</div>
+			</div>
+		
+			
+				<!-- <div id="transactions" class="first_visit">
+					<h2>Latest deposits / withdrawals</h2>
+					<div class="box">
+						<h3>You have no transactions</h3>
+					</div>
+				</div> -->
+				
+		</div>
+					<div id="workers" class="left">
+				<h2>Statistics:</h2>
+								<div id="hideWorkers" class="button_hide"></div>
+				<div id="contentLargeWorkers" class="content_large">
+					<div class="box">
+						<div class="worker_element" id="workersOnline"><sub>active</sub></div>
+						<div class="worker_element" id="workersOffline"><sub>offline</sub></div>
+						<div class="balance_element" id="workersProfitability">0.00 <small>Sols/Sec</small><div class="icon"></div></div>
+					</div>
+					<!-- <div class="links"> -->
+						<!-- <a href="https://www.nicehash.com/workers" class="link">See all workers</a> | <a href="https://www.nicehash.com/miner/39fkkGvNZy2xwjvxUUH7eRGGaqpX9jrqSG" class="link">See statistics</a> -->
+					<!-- </div> -->
+				</div>
+				<!-- <div id="contentSmallWorkers" class="content_small" style="display:none;">
+					<div class="box">
+						<div class="smallline">
+							<b id="workersOnlineSmall">0</b> active worker(s) making <b id="workersProfitabilitySmall"><b>0.00000000 BTC/day</b></b>
+							<a href="https://www.nicehash.com/workers" class="link">See all workers</a>
+						</div>
+					</div>	
+				</div> -->
+			</div>
+				
+			
+				
+			<!-- <div id="orders" class="first_visit left">
+				<h2>Your orders</h2>
+				<div class="box">
+					<h3>You have no open orders</h3>
+					<p>To get started, deposit at least 0.005 BTC to <b>39fkkGvNZy2xwjvxUUH7eRGGaqpX9jrqSG</b>. After that you'll be able to make your first order.</p>
+					<a class="button" href="https://www.nicehash.com/help/how-to-start-as-a-buyer" title="How to make an order">Learn more</a>
+				</div>
+			</div> -->
+					<!-- <script>!function(e,t,r,n,c,h,o){function a(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return r}try{for(c=e.getElementsByTagName('a'),o='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(h=c[n]).href.indexOf(o))>-1&&(h.href='mailto:'+a(h.href,t+o.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(h=c[n]).parentNode.replaceChild(e.createTextNode(a(h.getAttribute('data-cfemail'),0)),h)}catch(e){}}catch(e){}}(document);</script><script>
+				var workersShow = 1;
+				var ordersShow = 1;
+				 $(function(){
+                     $('#transactions [data-time]').each(function(i,el) {
+                       var date = new Date(+el.getAttribute('data-time'));
+                       if(isNaN(date.getTime())) return;
+                       $(el).text(formatDate(date,'YYYY-MM-dd HH:mm'));
+                     })
+
+					$("#hideWorkers").click(function(){
+						if (workersShow==1){
+							$("#hideWorkers").html("Maximize");
+							$("#contentLargeWorkers").hide();
+							$("#contentSmallWorkers").show();
+							workersShow = 0;
+							tabToggle('workers','0');
+						}else{
+							$("#hideWorkers").html("Minimize");
+							$("#contentLargeWorkers").show();
+							$("#contentSmallWorkers").hide();
+							workersShow = 1;
+							tabToggle('workers','1');
+						}
+						
+					});
+					$("#hideOrders").click(function(){
+						if (ordersShow==1){
+							$("#hideOrders").html("Maximize");
+							$("#contentLargeOrders").hide();
+							$("#contentSmallOrders").show();
+							$(".clear").show();
+							tabToggle('orders','0');
+							ordersShow = 0;
+						}else{
+							$("#hideOrders").html("Minimize");
+							$("#contentLargeOrders").show();
+							$("#contentSmallOrders").hide();
+							$(".clear").hide();
+							tabToggle('orders','1');
+							ordersShow = 1;
+						}
+					});
+					
+					$("#withdrawNow").click(function(){
+						$("#popbackground").show();
+						$("#withdrawUp").show();
+					});
+					
+					$("#depositNow").click(function(){
+						$("#popbackground").show();
+						$("#depositUp").show();
+					});
+					
+					$("#popbackground").click(function(){
+						$("#popbackground").hide();
+						$(".marketUp").hide();
+						$("#withdrawUp").hide();
+						$("#depositUp").hide();
+					});
+
+					$(".closeNow").click(function(){
+                        $("#popbackground").hide();
+                        $(".marketUp").hide();
+                        $("#withdrawUp").hide();
+                        $("#depositUp").hide();
+                    });
+					
+					$(".closeNow").click(function(){
+						$("#popbackground").hide();
+						$("#withdrawUp").hide();
+						$("#depositUp").hide();
+					});
+				});
+				function tabToggle(tab,status){ $.post("/dashboard", { tab:tab,status:status }); }
+			</script> -->
+	</div></div>
+<!-- <div id="cookie_message" style="display: none;"><div class="frame">
+							<div class="icon"></div>
+							<p>By using our website you agree that we can store cookies in your browser.</p>
+							<div class="button" onclick="$(this).parent().parent().hide(); document.cookie = &quot;cookie=hide; expires=Thu, 5 Mar 2099 12:00:00; UTC path=/&quot;;">Close</div> <a href="https://www.nicehash.com/privacy" rel="nofollow">Read more</a>
+						   </div></div> <footer><div class="frame">-->
+					<!-- <div class="row"> -->
+						<!-- <div class="col_4">
+							<h4>Sellers</h4>
+							<a href="https://www.nicehash.com/sell" title="Sell Hashing Power">Sell hashing power</a>
+							<a href="https://www.nicehash.com/cpu-gpu-mining" title="Mining with CPU/GPU">Mining with CPU/GPU</a>
+							<a href="https://www.nicehash.com/asic-mining" title="ASIC mining">ASIC mining</a>
+							<a href="https://www.nicehash.com/farm-mining" title="Mining farms">Mining farms</a>
+							<a href="https://miner.nicehash.com/" title="NiceHash Miner" target="_blank">NiceHash Miner</a>
+							<a href="https://www.nicehash.com/algorithm" title="Algorithms">Algorithms</a>
+							<a href="https://www.nicehash.com/miner" title="Find miner">Find miner</a>
+							<a href="https://www.nicehash.com/payments" title="Latest payments">Latest payments</a>
+							<a href="https://www.nicehash.com/profitability-calculator" title="Profitability calculator">Profitability calculator</a>
+						</div>
+						<div class="col_4">
+							<h4>Buyers</h4>
+							
+							<a href="https://www.nicehash.com/buy" title="Buy Hashing Power">Buy hashing power</a>
+							<a href="https://www.nicehash.com/marketplace" title="Live Marketplace">Live marketplace</a>
+							<a href="https://www.nicehash.com/pricing" title="Pricing">Pricing</a>
+							<a href="https://www.nicehash.com/compatible-pools" title="Compatible Pools">Compatible Pools</a>
+							
+							<h4>Development</h4>
+							<a href="https://www.nicehash.com/pool-operators" title="Pool operators">Pool operators</a>
+							<a href="https://www.nicehash.com/software-developers" title="Software developers">Software developers</a>
+							<a href="https://www.nicehash.com/doc-api" title="APIs">APIs</a>
+						</div>
+						<div class="col_4">
+							<h4>NiceHash</h4>
+							
+							<a href="https://www.nicehash.com/about" title="About">About</a>
+							<a href="https://www.nicehash.com/help/fees" title="Fees">Fees</a>
+							<a href="https://www.nicehash.com/media" title="Media">Media</a>
+							<a href="https://www.nicehash.com/news" title="News">News</a>
+							<a href="https://www.nicehash.com/jobs" title="Jobs">Jobs</a>
+							<a href="https://www.nicehash.com/referrals" title="Referrals">Referrals</a>
+							<a href="https://www.nicehash.com/help" title="Help">Help</a>
+							<a href="https://www.nicehash.com/support" title="Support">Support</a>
+						</div>
+						<div class="col_4">
+							<h4>Find us on</h4>
+							<a target="_blank" class="facebook" href="https://www.facebook.com/NiceHash/" title="NiceHash on Facebook" rel="sameAs">Facebook</a>
+							<a target="_blank" class="twitter" href="https://www.twitter.com/NiceHashMining/" title="NiceHash on Twitter" rel="sameAs">Twitter</a>
+							<a target="_blank" class="vk" href="https://vk.com/nicehashmining" title="NiceHash on VK" rel="sameAs">VK</a>
+							<a target="_blank" class="reddit" href="https://www.reddit.com/r/NiceHash/" title="NiceHash on Reddit" rel="sameAs">Reddit</a>
+							<a target="_blank" class="youtube" href="https://www.youtube.com/c/NiceHashmining" title="NiceHash on YouTube" rel="sameAs">YouTube</a>
+							<a target="_blank" class="github" href="https://github.com/nicehash" title="NiceHash on GitHub" rel="sameAs">GitHub</a>
+							<a target="_blank" class="bitcointalk" href="https://bitcointalk.org/index.php?topic=562238.0" title="NiceHash on BitcoinTalk" rel="sameAs">BitcoinTalk</a>
+						</div>
+					</div> -->
+					<!-- <div class="divider"></div>
+					<div class="row">
+						<div class="col_2">
+							<div class="logo"></div>
+							Copyright © 2014 - 2017 - <a href="https://www.nicehash.com/privacy" rel="nofollow" title="Privacy Policy">Privacy Policy</a> - <a href="https://www.nicehash.com/terms" rel="nofollow" title="Terms and Conditions">Terms and Conditions</a> - <a href="mailto:info@nicehash.com" rel="nofollow" title="Contact">Contact</a><br>
+							Languages: <a class="lang" href="https://www.nicehash.com/dashboard?lang=en" title="English">English</a> - <a class="lang" href="https://www.nicehash.com/dashboard?lang=ru" title="Русский">Русский</a> - <a class="lang" href="https://www.nicehash.com/dashboard?lang=zh" title="中文">中文</a>
+						</div>
+						<div class="col_2">
+							<h4>Server status</h4><div title="Online" class="stratum"><div class="bullet online"></div><label>Europe - Amsterdam</label></div><div title="Online" class="stratum"><div class="bullet online"></div><label>USA - San Jose</label></div><div title="Online" class="stratum"><div class="bullet online"></div><label>China - Hong Kong</label></div><div title="Online" class="stratum"><div class="bullet online"></div><label>Japan - Tokyo</label></div><div title="Online" class="stratum"><div class="bullet online"></div><label>India - Chennai</label></div><div title="Online" class="stratum"><div class="bullet online"></div><label>Brazil - Sao Paulo</label></div><script>!function(e,t,r,n,c,h,o){function a(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return r}try{for(c=e.getElementsByTagName('a'),o='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(h=c[n]).href.indexOf(o))>-1&&(h.href='mailto:'+a(h.href,t+o.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(h=c[n]).parentNode.replaceChild(e.createTextNode(a(h.getAttribute('data-cfemail'),0)),h)}catch(e){}}catch(e){}}(document);</script><script> 
+										$(function(){ 
+											function globalNotification(){			
+												$.getJSON("/api/globalNotification.json",function(json){ 
+													var dateTime = Date.now();
+													var timestamp = Math.floor(dateTime / 1000);
+													if(json.scheduled>timestamp){
+														var date1 = timestamp * 1000;
+														var date2 = parseInt(json.scheduled) * 1000;
+														var difference = date2 - date1;
+														var minutesLeft = Math.floor(difference/1000/60);
+														    difference -= minutesLeft*1000*60;
+														if($('#notificationNotice').length == 0){
+															$('<div id="notificationNotice">Scheduled maintenance in' + minutesLeft + ' minute(s)</div>').appendTo('body'); $('<div class="footerHeight"></div>').appendTo('body');
+														}else{
+															$('#notificationNotice').html('Scheduled maintenance in' + minutesLeft + ' minute(s)');
+														}
+													}else{
+														$('#notificationNotice').remove();
+													}
+												});
+											}
+											globalNotification();
+											setInterval(globalNotification, 30000);
+										}); </script></div>
+					</div>
+				</div></footer> -->
+				<script>
+				  $(function(){
+						$("#sel_lang").click(function() {
+							$("#hide_lang").toggle();			
+						});
+						
+						$(".hamburger").click(function() {
+							$(".menu").show();
+							$(".pushmenu-push").toggleClass("pushmenu-push-toright");
+							$(".pushmenu-left").toggleClass("pushmenu-open");
+						});
+						
+						$(".close").click(function() {
+							$(".pushmenu-push").removeClass("pushmenu-push-toright");
+							$(".pushmenu-left").removeClass("pushmenu-open");			
+						});
+						
+						$("#buyers_button").click(function() {
+							$("#sellers_dropdown").hide();
+							$("#sellers_button").children(".divider").hide();
+							$("#sellers_button").removeClass("more");
+							$("#wallet_dropdown").hide();
+							$("#wallet_button").children(".divider").hide();
+							$("#wallet_button").removeClass("more");								
+							$("#buyers_dropdown").toggle();
+							$(this).children(".divider").toggle();
+							$("#buyers_button").toggleClass("more");			
+						});
+						
+						$("#sellers_button").click(function() {
+							$("#buyers_dropdown").hide();
+							$("#buyers_button").children(".divider").hide();
+							$("#buyers_button").removeClass("more");
+							$("#wallet_dropdown").hide();
+							$("#wallet_button").children(".divider").hide();
+							$("#wallet_button").removeClass("more");									
+							$("#sellers_dropdown").toggle();
+							$(this).children(".divider").toggle();
+							$("#sellers_button").toggleClass("more");			
+						});
+						$("#wallet_button").click(function() {
+							$("#buyers_dropdown").hide();
+							$("#buyers_button").children(".divider").hide();
+							$("#buyers_button").removeClass("more");
+							$("#sellers_dropdown").hide();
+							$("#sellers_button").children(".divider").hide();
+							$("#sellers_button").removeClass("more");									
+							$("#wallet_dropdown").toggle();
+							$(this).children(".divider").toggle();
+							$("#wallet_button").toggleClass("more");			
+						});
+				});
+				
+				$(function(){
+					var utcoffset = (new Date().getTimezoneOffset()) * 60 * 1000; 
+					$("time").each(function(index){
+						var oldTime = Date.parse($(this).html());
+						if(oldTime>0 && $(this).html().indexOf(" ") >= 0){
+							var newdate = new Date(oldTime - utcoffset);
+							newdate = newdate.getFullYear() + "-" + ("0" + (newdate.getMonth() + 1)).slice(-2) + "-" + ("0" + newdate.getDate()).slice(-2) + " " +  ("0" + newdate.getHours()).slice(-2) + ":" + ("0" + newdate.getMinutes()).slice(-2) + ":" + ("0" + newdate.getSeconds()).slice(-2);
+							$(this).html(newdate);
+						}
+					});
+				});
+				</script>
+                    <!-- Google Code for Remarketing Tag -->
+                    <style>iframe[name="google_conversion_frame"]{ position:fixed; }</style>
+                    <script type="text/javascript">
+                        /* <![CDATA[ */
+                        var google_conversion_id = 944961577;
+                        var google_custom_params = window.google_tag_params;
+                        var google_remarketing_only = true;
+                        /* ]]> */
+                    </script>
+                    <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js"></script>
+                    <noscript>
+                        &lt;div style="display:none;"&gt;
+                        &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/944961577/?guid=ON&amp;amp;script=0"/&gt;
+                        &lt;/div&gt;
+                    </noscript>
+                    <!-- End Google Code for Remarketing Tag -->
+                    
+                    <!-- Facebook Pixel Code -->
+                    <script>
+                        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+                        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+                        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+                        fbq('init', '829618193840360'); // Insert your pixel ID here.
+                        fbq('track', 'PageView');
+                    </script>
+                    <noscript>
+                        &lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=829618193840360&amp;ev=PageView&amp;noscript=1"/&gt;
+                    </noscript>
+                    <!-- End Facebook Pixel Code -->
+                </body></html>
+
+                
