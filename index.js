@@ -44,11 +44,11 @@ function repeat() {
 			con.query(sql, function(err, result) {
 				if (err) throw err;
 				console.log("Number of records inserted: " + result.affectedRows);
-				con.query("select avg(MinedQty) from mining_data_per_day", function(err, result, field) {
+				con.query("select sum(MinedQty) from mining_data_per_day", function(err, result, field) {
 					if (err) throw err;
 					// console.log(result);
-					console.log("Total Mined ZEC:" + result[0]["avg(MinedQty)"]);
-					output = {price: result[0]["avg(MinedQty)"]}
+					console.log("Total Mined ZEC:" + result[0]["sum(MinedQty)"]);
+					output = {price: result[0]["sum(MinedQty)"]}
 					app.get("/", (req, res) => {
 					  res.render("index", output);
 					  return;
