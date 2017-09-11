@@ -3,7 +3,7 @@ var math = require('mathjs');
 var mysql = require('mysql');
 const express = require('express');
 const app = express()
-app.set('view engine', 'pug')
+app.set('view engine', 'pug');
 var reward;
 var reward_usd;
 var hashrate = 1000;
@@ -12,10 +12,8 @@ var current_difficulty;
 var network_hashrate;
 var block_time;
 var counter1 = 0;
-// USD = 50
-// Sol/s = 25
-var listener = app.listen(8000, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
+var listener = app.listen(8000, function() {
+	console.log('Your app is listening on port ' + listener.address().port);
 });
 var con = mysql.createConnection({
 	host: "localhost",
@@ -29,16 +27,13 @@ con.connect(function(err) {
 	repeat();
 });
 setInterval(repeat, 1000 * 30);
-// This is to capture realtime data using api
+
 function repeat() {
 	axios.get('https://api.zcha.in/v2/mainnet/network').then(function(response) {
 		axios.get('https://api.coinmarketcap.com/v1/ticker/zcash/').then(function(res) {
 			current_difficulty = response.data.difficulty;
 			reward = (hashrate / (current_difficulty * 8192)) * 10 * 30;
-			reward_usd = math.round(reward * res.data[0].price_usd, 2);
 			console.log("------------------------- Formula 1 -------------------------");
-			// console.log("Estimated reward in ZEC:" + reward);
-			// console.log("Estimated reward in USD:" + reward_usd);
 			counter1 = counter1 + 1;
 			var sql = "INSERT INTO mining_data_per_day VALUES (" + counter1 + "," + reward + "," + "NOW());";
 			con.query(sql, function(err, result) {
@@ -48,10 +43,15 @@ function repeat() {
 					if (err) throw err;
 					// console.log(result);
 					console.log("Total Mined ZEC:" + result[0]["sum(MinedQty)"]);
-					output = {price: result[0]["sum(MinedQty)"]}
+					reward_usd = math.round(reward * result[0]["sum(MinedQty)"], 2);
+					output = {
+						totalmined: result[0]["sum(MinedQty)"],
+						hashrate: hashrate,
+						reward_usd: reward_usd
+					}
 					app.get("/", (req, res) => {
-					  res.render("index", output);
-					  return;
+						res.render("index", output);
+						return;
 					});
 				});
 			});
